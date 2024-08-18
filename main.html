@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
     <style>
-		h2 {
-			text-align: center;
-		}
-        table {
+        h2 {
+            text-align: center;
+        }
+        table.middle {
             width: 100%;
             border-collapse: collapse;
         }
-        table, th, td {
-            border: 1px solid black;
+        table.middle, th, td {
+            border: 1px solid black; /* 1px solid black borders */
         }
-        th,td {
-            padding: 8px;
+        th, td {
+            padding: 1px; /* Cell padding: 1px */
             text-align: left;
         }
-		.center {
+        td, th {
+            border-spacing: 1px; /* Border spacing: 1px */
+        }
+        .center {
             text-align: center;
         }
         .right {
             text-align: right;
         }
-		
         .first-row {
-            background-color: green;
+            background-color: green; /* Background color for the first row */
             color: white;
         }
         .last-row {
-            background-color: blue;
+            background-color: blue; /* Background color for the last row */
             color: white;
         }
-		
         #t-image {
             text-align: center; /* Center the image within its cell */
         }
@@ -43,8 +43,10 @@
     </style>
 </head>
 <body>
-	<h2>HTML Assignment #3</h2>
-    <table id="table-1">
+    <h2>HTML Assignment #3</h2>
+
+    <!-- Table 1 with class "middle" -->
+    <table id="table-1" class="middle">
         <tr>
             <th id="t11">left</th>
             <th class="center">center</th>
@@ -61,47 +63,51 @@
             <td class="right">right</td>
         </tr>
     </table><br><br>
-    <table id="table-2">
+
+    <!-- Table 2 with class "middle" -->
+    <table id="table-2" class="middle">
         <tr>
             <td id="t21" colspan="6"></td>
         </tr>
         <tr>
-			<td rowspan="4"></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td rowspan="2" colspan="3"></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
+            <td rowspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td rowspan="2" colspan="3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
         <tr>
             <td colspan="6"></td>
         </tr>
     </table><br><br>
 
-	<table id="table-3">
+    <!-- Table 3 with class "middle" -->
+    <table id="table-3" class="middle">
         <tr class="first-row">
             <td colspan="6"></td>
         </tr>
         <tr>
-            <td id="t-image" colspan="6"><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"></td>
+            <td id="t-image" colspan="6">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Portfolio Image">
+            </td>
         </tr>
-        
         <tr class="last-row">
-            <td colspan="6">Last Row - Blue Background</td>
+            <td colspan="6"></td>
         </tr>
     </table>
 </body>
